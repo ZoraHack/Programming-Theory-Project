@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlaneController : PlayerController
 {
-    private float speed = 5.0f;
+   private float speed = 5.0f;
     public float rotationSpeed;
     public float verticalInput;
 
