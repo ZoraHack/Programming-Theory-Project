@@ -17,10 +17,18 @@ public class PlayerController : MonoBehaviour
         forwardInput = Input.GetAxis("Vertical");
 
 
+        MoveVehicleForwardAndBack();
+        TurnVehicle();
+    }
+
+    public virtual void MoveVehicleForwardAndBack()
+    {
         // We move the Bus Forward based on vertical input
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-
-        // We turn the Bus based on horizontal input
+    }
+    public virtual void TurnVehicle()
+    {
+         // We turn the Bus based on horizontal input
         transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * horizontalInput);
     }
 }

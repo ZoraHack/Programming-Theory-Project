@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject Plane;
 
     [SerializeField] Vector3 offset = new Vector3(-1, 9, -19);
 
@@ -19,7 +19,7 @@ public class FollowPlayer : MonoBehaviour
     {
         //Offset the camera behind the player by adding to the player's position
 
-        transform.position = player.transform.position + offset;
+        transform.position = Plane.transform.position + offset;
 
     }
 }
